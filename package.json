@@ -1,11 +1,22 @@
 {
   "name": "nen-ui",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/nen-ui.umd.cjs",
+  "module": "./dist/nen-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/nen-ui.js",
+      "require": "./dist/nen-ui.umd.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc ",
     "preview": "vite preview"
   },
   "dependencies": {
