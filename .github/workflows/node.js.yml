@@ -24,6 +24,6 @@ jobs:
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
             - args: [--global, gulp, prettier, typescript]
-    - run: pnpm ci
+    - run: pnpm install
     - run: pnpm run test
     - run: pnpm run build --if-present
