@@ -3,7 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/nen-ui.umd.cjs",
   "module": "./dist/nen-ui.js",
   "exports": {
@@ -17,13 +19,15 @@
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "types": "vue-tsc ",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.3.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vitest/coverage-istanbul": "^0.33.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vitest": "^0.33.0",
