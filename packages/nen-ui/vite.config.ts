@@ -7,10 +7,11 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, 'lib/index.ts'),
+      entry: resolve(__dirname, 'src/lib/index.ts'),
       name: 'NenUI',
       // the proper extensions will be added
       fileName: 'nen-ui',
+      formats: ['es', 'cjs', 'umd', 'iife']
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

@@ -1,7 +1,7 @@
 {
-  "name": "nen-ui",
+  "name": "@nen-ui/nen-ui",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "files": [
     "dist"
