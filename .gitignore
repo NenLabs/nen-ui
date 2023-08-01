@@ -1,25 +1,26 @@
 # Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+packages/nen-ui/logs
+packages/nen-ui/*.log
+packages/nen-ui/npm-debug.log*
+packages/nen-ui/yarn-debug.log*
+packages/nen-ui/yarn-error.log*
+packages/nen-ui/pnpm-debug.log*
+packages/nen-ui/lerna-debug.log*
 
-coverage
 node_modules
-dist
-dist-ssr
-*.local
+packages/nen-ui/coverage
+packages/nen-ui/node_modules
+packages/nen-ui/dist
+packages/nen-ui/dist-ssr
+packages/nen-ui/*.local
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+packages/nen-ui/.vscode/*
+packages/nen-ui/!.vscode/extensions.json
+packages/nen-ui/.idea
+packages/nen-ui/.DS_Store
+packages/nen-ui/*.suo
+packages/nen-ui/*.ntvs*
+packages/nen-ui/*.njsproj
+packages/nen-ui/*.sln
+packages/nen-ui/*.sw?
