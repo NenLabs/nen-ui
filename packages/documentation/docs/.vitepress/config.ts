@@ -9,7 +9,7 @@ export default defineConfig({
     logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Guide', link: '/guide' },
+      { text: 'Guide', link: '/api-examples' },
       { text: 'Examples', link: '/markdown-examples' },
       {
         text: `v${packageJson.version}`,
