@@ -5,21 +5,24 @@ layout: home
 hero:
   name: "NenUI"
   text: "An unstyled Vue3 component library"
-  tagline: My great project tagline
+  tagline: An unstyled Vue3 component library
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Get Started
       link: /markdown-examples
     - theme: alt
       text: API Examples
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🎨
+    title: Fully Customizable
+    details: Components can be styled with TailwindCSS classes.
+  - icon: 💪🏾
+    title: Typed Components
+    details: Built with 100% typescript.
+  - icon: 📦
+    title: Lightweight
+    details: Zero deps and browser friendly, ~6kb bundle size.
 ---
 

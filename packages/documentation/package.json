@@ -1,4 +1,6 @@
 {
+  "name": "@nen-ui/docs",
+  "version": "0.0.0",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
