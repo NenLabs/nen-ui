@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -12,13 +16,14 @@ importers:
         version: 5.1.6
 
   packages/documentation:
+    dependencies:
+      vue:
+        specifier: ^3.3.4
+        version: 3.3.4
     devDependencies:
       vitepress:
         specifier: 1.0.0-beta.7
         version: 1.0.0-beta.7(@algolia/client-search@4.19.1)(@types/node@20.4.5)(search-insights@2.7.0)
-      vue:
-        specifier: ^3.3.4
-        version: 3.3.4
 
   packages/nen-ui:
     dependencies:
@@ -1959,7 +1964,3 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
