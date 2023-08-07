@@ -14,6 +14,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+packages/documentation/docs/.vitepress/cache
 packages/nen-ui/coverage
 packages/nen-ui/node_modules
 packages/nen-ui/dist
