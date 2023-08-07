@@ -34,7 +34,8 @@ export default defineConfig({
       inline: ['@vue'],
     },
     coverage: {
-      provider: 'istanbul'
+      provider: 'istanbul',
+      reporter: ['text', 'json', 'html'],
     }
   }
 })
