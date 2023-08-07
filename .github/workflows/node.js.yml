@@ -26,3 +26,4 @@ jobs:
             - args: [--global, gulp, prettier, typescript]
     - run: pnpm install
     - run: pnpm run test
+    - run: pnpm run build --if-present
