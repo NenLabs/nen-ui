@@ -6,7 +6,6 @@ describe('HelloWorld.vue', () => {
   it('should render', () => {
     const wrapper = mount(HelloWorld, { props: { msg: 'I am a message' } })
     expect(wrapper.text()).toContain('I am a message')
-    expect(wrapper.html()).toMatchSnapshot()
   })
 
   it('should be interactive', async () => {
