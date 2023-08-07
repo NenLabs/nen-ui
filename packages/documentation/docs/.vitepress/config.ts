@@ -1,3 +1,4 @@
+import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vitepress'
 import packageJson from './../../package.json'
 
@@ -73,5 +74,10 @@ export default defineConfig({
       copyright: `Copyright © 2023-present Egwuchukwu Diala,
       NenLabs Core Team and NenUI Contributors`
     }
-  }
+  },
+  vite: {
+    plugins: [
+      UnoCSS(),
+    ],
+  } as any,
 })
