@@ -32,3 +32,40 @@ features:
     details: Zero deps and browser friendly, ~6kb bundle size.
 ---
 
+<script setup>
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers,
+  VPTeamPageSection
+} from 'vitepress/theme'
+
+const coreMembers = [
+    {
+    avatar: 'https://avatars.githubusercontent.com/u/46764458?v=4',
+    name: 'Egwuchukwu Diala',
+    title: 'Open sourcer',
+    desc: 'Frontend Engineer <br> Designer',
+    org: 'NenLabs',
+    orgLink: 'https://github.com/NenLabs',
+    links: [
+      { icon: 'github', link: 'https://github.com/egdiala' },
+      { icon: 'twitter', link: 'https://twitter.com/e_diala' },
+      { icon: {
+          svg: '<div class="i-heroicons:globe-europe-africa-solid text-lg" />'
+        }, link: 'https://egdiala.dev' }
+    ]
+  }
+]
+</script>
+
+<VPTeamPage pt-8>
+  <VPTeamPageSection>
+    <template #title>Core Team</template>
+    <template #lead>The development of NenUI is guided by an international
+      team, some of whom have chosen to be featured below.</template>
+    <template #members>
+      <VPTeamMembers size="small" :members="coreMembers" />
+    </template>
+  </VPTeamPageSection>
+</VPTeamPage>
