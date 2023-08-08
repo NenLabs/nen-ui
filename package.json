@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "cd packages/documentation && pnpm run docs:dev",
+    "docs:dev": "cd packages/documentation && pnpm run docs:dev --host",
     "docs:build": "cd packages/documentation && pnpm run docs:build",
     "docs:preview": "cd packages/documentation && pnpm run docs:preview",
     "dev": "cd packages/nen-ui && pnpm run dev --host",

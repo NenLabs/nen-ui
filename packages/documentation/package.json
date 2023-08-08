@@ -1,11 +1,20 @@
 {
+  "name": "@nen-ui/docs",
+  "version": "0.0.0",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "vitepress": "1.0.0-beta.7",
+    "@iconify-json/heroicons": "^1.1.12",
+    "@unocss/core": "^0.54.2",
+    "@unocss/preset-attributify": "^0.54.2",
+    "@unocss/preset-icons": "^0.54.2",
+    "vitepress": "1.0.0-beta.7"
+  },
+  "dependencies": {
+    "unocss": "^0.54.2",
     "vue": "^3.3.4"
   }
 }
