@@ -28,8 +28,14 @@ export default defineConfig({
   },
   plugins: [vue()],
   test: {
+    environment: 'jsdom',
+    include: ['test/**/*.test.ts'],
+    deps: {
+      inline: ['@vue'],
+    },
     coverage: {
-      provider: 'istanbul'
+      provider: 'istanbul',
+      reporter: ['text', 'json', 'html'],
     }
   }
 })
