@@ -18,7 +18,10 @@ export default withPwa(defineConfig({
     ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
     ['link', { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180"}],
     ['link', { rel: "mask-icon", href: "/logo.svg", color: "#FFFFFF"}],
-    ['meta', { name: "theme-color", content: "#ffffff"}],
+    ['meta', { name: "theme-color", content: "#ffffff" }],
+    ['meta', { property: "og:title", content: "NenUI" }],
+    ['meta', { property: "og:description", content: "An unstyled Vue3 component library" }],
+    ['meta', { property: "og:image", content: "/og_image.png" }],
   ],
   themeConfig: {
     externalLinkIcon: true,
