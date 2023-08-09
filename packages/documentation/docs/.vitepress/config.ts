@@ -1,9 +1,10 @@
 import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
 import packageJson from './../../package.json'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withPwa(defineConfig({
   title: "NenUI",
   description: "An unstyled Vue3 component library",
   titleTemplate: 'NenUI - :title',
@@ -15,6 +16,8 @@ export default defineConfig({
   head: [
     ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
     ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
+    ['link', { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180"}],
+    ['link', { rel: "mask-icon", href: "/logo.svg", color: "#FFFFFF"}],
     ['meta', { name: "theme-color", content: "#ffffff"}],
   ],
   themeConfig: {
@@ -28,7 +31,6 @@ export default defineConfig({
     nav: [
       { text: 'Guide', link: '/api-examples' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Team', link: '/team' },
       {
         text: `v${packageJson.version}`,
         items: [
@@ -80,4 +82,11 @@ export default defineConfig({
       UnoCSS(),
     ],
   } as any,
-})
+  pwa: {
+    injectRegister: 'auto',
+    registerType: 'autoUpdate',
+    devOptions: {
+      enabled: true
+    }
+  }
+}))
