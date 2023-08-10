@@ -41,21 +41,21 @@ onBeforeMount(async () => {
       role="alertdialog"
       aria-labelledby="pwa-message"
     >
-      <div id="pwa-message" class="mb-2 text-white dark:text-[#313136]">
+      <div id="pwa-message" class="mb-2 dark:text-white text-[#313136]">
         {{ offlineReady ? 'App ready to work offline' : 'New content available, click the reload button to update.' }}
       </div>
       <button
         v-if="needRefresh"
         type="button"
         id="pwa-refresh"
-        class="text-white dark:text-[#313136]"
+        class="dark:text-white text-[#313136]"
         @click="updateServiceWorker?.()"
       >
         Reload
       </button>
       <button
         type="button"
-        class="border outline-none mr-5 rounded-sm py-1 px-2.5"
+        class="border outline-none mr-5 rounded-sm py-1 px-2.5 dark:text-white text-[#313136]"
         @click="close"
       >
         Close
