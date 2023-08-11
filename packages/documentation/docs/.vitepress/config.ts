@@ -10,6 +10,7 @@ export default withPwa(defineConfig({
   titleTemplate: 'NenUI - :title',
   lastUpdated: true,
   cleanUrls: true,
+  lang: 'en-US',
   sitemap: {
     hostname: 'https://nenui.nenlabs.org'
   },
@@ -81,15 +82,44 @@ export default withPwa(defineConfig({
     }
   },
   vite: {
+    logLevel: 'info',
+    define: {
+      __DATE__: `'${new Date().toISOString()}'`,
+    },
     plugins: [
       UnoCSS(),
     ],
   } as any,
   pwa: {
-    injectRegister: 'auto',
-    registerType: 'autoUpdate',
-    devOptions: {
-      enabled: true
-    }
-  }
+    mode: 'development',
+    base: '/',
+    scope: '/',
+    includeAssets: ['logo.svg'],
+    manifest: {
+      name: 'Nen UI',
+      short_name: 'NenUI',
+      theme_color: '#ffffff',
+      icons: [
+        {
+          src: 'pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+      ],
+    },
+    workbox: {
+      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+    },
+  },
 }))

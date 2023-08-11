@@ -10,7 +10,7 @@
 
 ## Documentation
 
-For full documentation, visit [nenui.nenlabs.org](https://nenui.nenlabs.com).
+For full documentation, visit [ui.nenlabs.org](https://ui.nenlabs.org).
 
 ### Installing the latest version
 
