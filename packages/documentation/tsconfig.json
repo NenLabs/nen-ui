@@ -15,6 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vitepress",
+      "vite-plugin-pwa/vue"
     ]
   },
   "include": [
