@@ -1,7 +1,15 @@
 {
-  "name": "@nen-ui/nen-ui",
+  "name": "@nenlabs/nen-ui",
   "private": true,
   "version": "0.0.0",
+  "author": "Egwuchukwu Diala (https://github.com/egdiala)",
+  "homepage": "https://ui.nenlabs.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NenLabs/nen-ui.git"
+  },
+  "keywords": ["vue", "ui", "tailwindcss", "component", "unstyled"],
+  "license": "MIT",
   "type": "module",
   "files": [
     "dist"
