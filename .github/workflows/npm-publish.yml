@@ -28,7 +28,7 @@ jobs:
 
       - run: pnpm install
 
-      - run: npx changelogithub
+      - run: cd packages/nen-ui && npx changelogithub
 
       - run: pnpm run publish:ci
         env:
