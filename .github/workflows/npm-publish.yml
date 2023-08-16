@@ -37,6 +37,6 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - run: pnpm run build
-      - run: npm publish --access public
+      - run: cd packages/nen-ui/dist && npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
