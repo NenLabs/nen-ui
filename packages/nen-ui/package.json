@@ -1,7 +1,7 @@
 {
   "name": "@nenlabs/nen-ui",
-  "private": true,
   "version": "0.0.0",
+  "description": "Collection of unstyled Vue3 components",
   "author": "Egwuchukwu Diala (https://github.com/egdiala)",
   "homepage": "https://ui.nenlabs.org",
   "repository": {
@@ -9,11 +9,11 @@
     "url": "https://github.com/NenLabs/nen-ui.git"
   },
   "keywords": [
-    "vue",
+    "nen",
     "ui",
-    "tailwindcss",
-    "component",
-    "unstyled"
+    "nenlabs",
+    "nenui",
+    "nen-ui"
   ],
   "license": "MIT",
   "type": "module",
