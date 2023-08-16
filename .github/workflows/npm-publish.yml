@@ -18,10 +18,6 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
-          run_install: |
-            - recursive: true
-              args: [--frozen-lockfile, --strict-peer-dependencies]
-            - args: [--global, gulp, prettier, typescript]
 
       - name: Use Node.js v18
         uses: actions/setup-node@v3
