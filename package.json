@@ -11,8 +11,7 @@
     "build": "esno scripts/build.ts",
     "types": "cd packages/nen-ui && pnpm run types",
     "preview": "cd packages/nen-ui && pnpm run preview",
-    "test": "cd packages/nen-ui && pnpm run test",
-    "publish:ci": "esno scripts/publish.ts"
+    "test": "cd packages/nen-ui && pnpm run test"
   },
   "keywords": [],
   "author": "",
