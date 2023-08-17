@@ -29,6 +29,7 @@
     }
   },
   "dependencies": {
+    "changelogithub": "^0.12.12",
     "consola": "^3.2.3",
     "esno": "^0.17.0"
   }

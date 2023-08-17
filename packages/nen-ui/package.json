@@ -38,7 +38,6 @@
     "test": "vitest run --coverage"
   },
   "dependencies": {
-    "changelogithub": "^0.12.12",
     "vue": "^3.3.4"
   },
   "devDependencies": {
