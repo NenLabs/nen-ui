@@ -3,11 +3,14 @@ import assert from 'node:assert'
 import process from 'node:process'
 import fs from 'fs-extra'
 import { execSync } from 'node:child_process'
+import { consola } from 'consola'
+import { version } from '../package.json'
 
 
 const rootDir = path.resolve(__dirname, '..')
 
 const name = 'nen-ui'
+let command = 'npm publish --access public'
 
 
 assert(process.cwd() !== __dirname)
@@ -29,6 +32,12 @@ async function build() {
 async function cli() {
   try {
     await build()
+
+    if (version.includes('beta'))
+        command += ' --tag beta'
+
+    execSync(command, { stdio: 'inherit', cwd: path.join('packages', name, 'dist') })
+    consola.success(`Published @nenlabs/${name}`)
   }
   catch (e) {
     console.error(e)
