@@ -11,7 +11,8 @@
     "build": "cd packages/nen-ui && pnpm run build",
     "types": "cd packages/nen-ui && pnpm run types",
     "preview": "cd packages/nen-ui && pnpm run preview",
-    "test": "cd packages/nen-ui && pnpm run test"
+    "test": "cd packages/nen-ui && pnpm run test",
+    "publish:ci": "esno scripts/publish.ts"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +27,9 @@
         "@algolia/client-search"
       ]
     }
+  },
+  "dependencies": {
+    "consola": "^3.2.3",
+    "esno": "^0.17.0"
   }
 }
