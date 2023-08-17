@@ -8,7 +8,7 @@
     "docs:build": "cd packages/documentation && pnpm run docs:build",
     "docs:preview": "cd packages/documentation && pnpm run docs:preview",
     "dev": "cd packages/nen-ui && pnpm run dev --host",
-    "build": "cd packages/nen-ui && pnpm run build",
+    "build": "esno scripts/build.ts",
     "types": "cd packages/nen-ui && pnpm run types",
     "preview": "cd packages/nen-ui && pnpm run preview",
     "test": "cd packages/nen-ui && pnpm run test",
@@ -31,6 +31,7 @@
   "dependencies": {
     "changelogithub": "^0.12.12",
     "consola": "^3.2.3",
-    "esno": "^0.17.0"
+    "esno": "^0.17.0",
+    "fs-extra": "^11.1.1"
   }
 }
