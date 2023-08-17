@@ -3,9 +3,9 @@ import path from 'node:path'
 import { consola } from 'consola'
 import { version } from '../package.json'
 
-let name = 'nenui'
+let name = 'nen-ui'
 
-execSync('npm run build', { stdio: 'inherit' })
+execSync('pnpm run build', { stdio: 'inherit', cwd: path.join('packages', name) })
 
 let command = 'npm publish --access public'
 
