@@ -16,7 +16,7 @@ For full documentation, visit [ui.nenlabs.org](https://ui.nenlabs.org).
 
 You can install the latest version by using:
 
-- `pnpm install @nen-ui/nen-ui@latest`
+- `pnpm install @nenlabs/nen-ui`
 
 ## Community
 
