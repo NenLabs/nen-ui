@@ -21,6 +21,7 @@ async function buildMetaFile() {
 
     const packageJSON = await fs.readJSON(path.join(packageRoot, 'package.json'))
     await fs.writeJSON(path.join(packageDist, 'package.json'), packageJSON, { spaces: 2 })
+    await fs.copy(path.join(packageRoot, 'README.md'), path.join(packageDist, 'README.md'))
 }
 
 async function build() {
