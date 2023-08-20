@@ -17,15 +17,16 @@ assert(process.cwd() !== __dirname)
 
 async function buildMetaFile() {
     const packageRoot = path.resolve(rootDir, 'packages', name)
+    execSync('pnpm run build', { stdio: 'inherit', cwd: packageRoot })
     const packageDist = path.resolve(packageRoot, 'dist')
 
     const packageJSON = await fs.readJSON(path.join(packageRoot, 'package.json'))
     await fs.writeJSON(path.join(packageDist, 'package.json'), packageJSON, { spaces: 2 })
-    await fs.copy(path.join(packageRoot, 'README.md'), path.join(packageDist, 'README.md'))
+    await fs.copyFile(path.join(packageRoot, 'README.md'), path.join(packageDist, 'README.md'))
+    await fs.copyFile(path.join(packageDist, 'nen-ui.cjs'), path.join(packageDist, 'nen-ui.cjs'))
 }
 
 async function build() {
-    execSync('pnpm run build', { stdio: 'inherit', cwd: path.join('packages', name) })
 
     await buildMetaFile()
 }
@@ -37,7 +38,7 @@ async function cli() {
     if (version.includes('beta'))
         command += ' --tag beta'
 
-    execSync(command, { stdio: 'inherit', cwd: path.join('packages', name, 'dist') })
+    execSync(command, { stdio: 'inherit', cwd: path.join(rootDir, 'packages', name) })
     consola.success(`Published @nenlabs/${name}`)
   }
   catch (e) {
