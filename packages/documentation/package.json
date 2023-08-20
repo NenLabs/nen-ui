@@ -1,11 +1,12 @@
 {
   "name": "@nenlabs/docs",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
+  "packageManager": "pnpm@8.6.12",
   "devDependencies": {
     "@iconify-json/heroicons": "^1.1.12",
     "@unocss/core": "^0.54.2",
