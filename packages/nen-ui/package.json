@@ -1,6 +1,6 @@
 {
   "name": "@nenlabs/nenui",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": false,
   "description": "Collection of unstyled Vue3 components",
   "author": "Egwuchukwu Diala (https://github.com/egdiala)",

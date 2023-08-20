@@ -1,7 +1,11 @@
-<h3 align="center">
+<p align="center">
   <a href="https://github.com/NenLabs/nen-ui">
-  <img src="https://avatars.githubusercontent.com/u/114816453?s=400&u=3a6f838a1250c52524ce0c0f5114b433bc65ed12&v=4" alt="NenUI - An unstyled component set library that provides functionalities and can be styled with TailwindCSS classes" width="300">
-</a>
+  <img src="https://ui.nenlabs.org/logo.svg" alt="NenUI - An unstyled component set library that provides functionalities and can be styled with TailwindCSS classes" width="200">
+  </a>
+</p>
+
+<h1 align="center">
+  NenUI
 </h3>
 
 <p align="center">
