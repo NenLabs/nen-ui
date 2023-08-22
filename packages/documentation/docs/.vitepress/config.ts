@@ -39,7 +39,7 @@ export default withPwa(defineConfig({
         text: `v${packageJson.version}`,
         items: [
           { text: 'Release Notes', link: 'https://github.com/item-1' },
-          { text: 'Contributing', link: '/item-2' },
+          { text: 'Contributing', link: '/contributing' },
         ]
       }
     ],
