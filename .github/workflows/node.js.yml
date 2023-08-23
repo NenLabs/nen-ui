@@ -33,3 +33,5 @@ jobs:
         with:
           name: "Components"
           vite-config-path: "./packages/nen-ui/vite.config.ts"
+          json-summary-path: "./packages/nen-ui/coverage/coverage-summary.json"
+          json-final-path: "./packages/nen-ui/coverage/coverage-final.json"
