@@ -26,7 +26,7 @@ jobs:
       - name: "Install Deps"
         run: pnpm install
       - name: "Run Test"
-        run: npx vitest --coverage
+        run: pnpm test
       - name: "Report Coverage"
         if: always()
         uses: davelosert/vitest-coverage-report-action@v2
