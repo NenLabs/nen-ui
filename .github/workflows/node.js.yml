@@ -5,23 +5,33 @@ name: Test
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "pre-release"]
   pull_request:
-    branches: ["main"]
+    branches: ["main", "pre-release"]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
-
-      - uses: pnpm/action-setup@v2
+      - name: "Install PNPM"
+        uses: pnpm/action-setup@v2
         with:
           version: 8
           run_install: |
             - recursive: true
               args: [--no-frozen-lockfile, --strict-peer-dependencies]
             - args: [--global, gulp, prettier, typescript]
-      - run: pnpm install
-      - run: pnpm run test
+      - name: "Install Deps"
+        run: pnpm install
+      - name: "Run Test"
+        run: pnpm test
+      - name: "Report Coverage"
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          name: "Components"
+          vite-config-path: "./packages/nen-ui/vite.config.ts"
+          json-summary-path: "./packages/nen-ui/coverage/coverage-summary.json"
+          json-final-path: "./packages/nen-ui/coverage/coverage-final.json"

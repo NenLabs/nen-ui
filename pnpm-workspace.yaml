@@ -1,2 +1,6 @@
 packages:
   - "./packages/**"
+scripts:
+  build-all: pnpm run -r --recursive build
+  test-all: pnpm run -r --recursive test
+  custom-script: pnpm run -r --recursive custom-script
