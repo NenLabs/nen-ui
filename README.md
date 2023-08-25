@@ -36,4 +36,8 @@ For casual chit-chat with others using the library:
 
 ## Contributing
 
-If you're interested in contributing to NenUI, please read our [contributing docs](https://github.com/tailwindlabs/headlessui/blob/main/.github/CONTRIBUTING.md) **before submitting a pull request**.
+If you're interested in contributing to NenUI, please read our [contributing docs](https://github.com/NenLabs/nen-ui/blob/main/packages/documentation/docs/contributing.md) **before submitting a pull request**.
+
+## Repo Activity
+
+![NenUI](https://repobeats.axiom.co/api/embed/0decf5e1c2dbd984f45023420c00166c2413017b.svg "Repobeats analytics image")
