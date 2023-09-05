@@ -41,8 +41,6 @@ There are some notes for adding new components:
 
 > Please note you should update `packages/nen-ui/src/lib/index.ts` as it's not auto-generated at the moment. Also, tests should be written for components and documentation.
 
-### Project structure enhancement
-Feel free to enhance the current project structure. If you feel there are better ways to handle some things that are being done on this package, feel free to contribute. Guidelines for contribution follows most of the same convention as mentioned under [new components](#new-components).
 
 ## Project Structure 📦
 
@@ -88,6 +86,8 @@ for `index.md` the first sentence will be displayed as the short intro in the fu
 
 This will be the intro. The detail descriptions...
 ```
+### Project structure enhancement
+Feel free to enhance the current project structure. If you feel there are better ways to handle some things that are being done on this package, feel free to contribute. Guidelines for contribution follows most of the same convention as mentioned under [new components](#new-components).
 
 
 ## Code Style 🧑🏽‍💻
