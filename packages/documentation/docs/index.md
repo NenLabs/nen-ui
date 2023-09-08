@@ -50,7 +50,7 @@ const coreMembers = [
     orgLink: 'https://github.com/NenLabs',
     links: [
       { icon: 'github', link: 'https://github.com/egdiala' },
-      { icon: { svg: '<div class="i-fa6-brands:x-twitter text-base" />' }, link: 'https://twitter.com/e_diala' },
+      { icon: 'twitter', link: 'https://twitter.com/e_diala' },
       { icon: {
           svg: '<div class="i-heroicons:globe-europe-africa-solid text-lg" />'
         }, link: 'https://egdiala.dev' }
