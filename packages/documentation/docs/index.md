@@ -45,12 +45,12 @@ const coreMembers = [
     avatar: 'https://avatars.githubusercontent.com/u/46764458?v=4',
     name: 'Egwuchukwu Diala',
     title: 'Open sourcer',
-    desc: 'Frontend Engineer <br> Designer',
+    desc: 'Frontend Engineer & Designer',
     org: 'NenLabs',
     orgLink: 'https://github.com/NenLabs',
     links: [
       { icon: 'github', link: 'https://github.com/egdiala' },
-      { icon: 'twitter', link: 'https://twitter.com/e_diala' },
+      { icon: { svg: '<div class="i-fa6-brands:x-twitter text-base" />' }, link: 'https://twitter.com/e_diala' },
       { icon: {
           svg: '<div class="i-heroicons:globe-europe-africa-solid text-lg" />'
         }, link: 'https://egdiala.dev' }
