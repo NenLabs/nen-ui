@@ -8,7 +8,6 @@
   },
   "packageManager": "pnpm@8.6.12",
   "devDependencies": {
-    "@iconify-json/heroicons": "^1.1.12",
     "@unocss/core": "^0.54.2",
     "@unocss/preset-attributify": "^0.54.2",
     "@unocss/preset-icons": "^0.54.2",
