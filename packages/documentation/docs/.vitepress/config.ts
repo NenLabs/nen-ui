@@ -69,7 +69,7 @@ export default withPwa(defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/NenLabs/nen-ui' },
-      { icon: { svg: '<div class="i-fa6-brands:x-twitter text-base" />' }, link: 'https://github.com/NenLabs/nen-ui' },
+      { icon: 'twitter', link: 'https://github.com/NenLabs/nen-ui' },
       { icon: 'discord', link: 'https://discord.gg/duCVQt5VSU' }
     ],
     search: {
@@ -96,7 +96,7 @@ export default withPwa(defineConfig({
     scope: '/',
     includeAssets: ['logo.svg'],
     manifest: {
-      name: 'Nen UI',
+      name: 'NenUI',
       short_name: 'NenUI',
       theme_color: '#ffffff',
       icons: [
