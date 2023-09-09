@@ -51,9 +51,6 @@ const coreMembers = [
     links: [
       { icon: 'github', link: 'https://github.com/egdiala' },
       { icon: 'twitter', link: 'https://twitter.com/e_diala' },
-      { icon: {
-          svg: '<div class="i-heroicons:globe-europe-africa-solid text-lg" />'
-        }, link: 'https://egdiala.dev' }
     ]
   }
 ]

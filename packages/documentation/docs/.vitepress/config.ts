@@ -96,7 +96,7 @@ export default withPwa(defineConfig({
     scope: '/',
     includeAssets: ['logo.svg'],
     manifest: {
-      name: 'Nen UI',
+      name: 'NenUI',
       short_name: 'NenUI',
       theme_color: '#ffffff',
       icons: [
