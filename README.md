@@ -14,6 +14,9 @@
 
 ---
 
+![Static Badge](https://img.shields.io/badge/contributor_covenant-v.21-blue)
+![Static Badge](https://img.shields.io/badge/license-MIT-blue)
+
 ## Documentation
 
 For full documentation, visit [ui.nenlabs.org](https://ui.nenlabs.org).
